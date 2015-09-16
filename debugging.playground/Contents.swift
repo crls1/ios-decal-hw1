@@ -39,8 +39,11 @@ class Foo {
         return true
     }
     
-//: The for loop did not compile because i was set to be a constant, but should be a variable since it changes.
-//: The return value should be true.
+//: - The for loop did not compile because i was set to be a constant, but should be a variable since it changes.
+//: - The return value should be true once we know the words are palindromes
+//: - Since `arePalindromes()` is a type method it should have class before func.
+//: - Minor changes: since the count of the array will not change, we can set `numElements` to be a constant
+
     
     
     
@@ -86,8 +89,10 @@ class Foo {
     }
 }
 
-//: The dictionary countLetters was not being initialized just described. The function should return true at the end.
-//: Also the functions should be class functions
+//: - The dictionary countLetters was not being initialized just described.
+//: - Once we know that the words are anagrams the function should return true.
+//: - Also the method is a type method so it should be prefixed with class
+//: - Minor changes: changed the len variables to be constants also since letter was not used in for loop, I set it to an underscore
 
 
 //: **Do not** change anything below.
