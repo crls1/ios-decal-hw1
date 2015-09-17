@@ -11,15 +11,16 @@ import UIKit
 
 class Foo {
     
-    var wordA : String!
-    var wordB : String!
+    var wordA : String?
+    var wordB : String?
     
     init (words: [String?]) {
         wordA = words[0]!
         wordB = words[1]!
     }
     
-//: To unwrap an optional you need to use a exclaimation mark.
+//: I changed the type of the wordA and wordB to be optinals since words is an array of optinal Stirngs. And to unwrap the optional I changed the
+//: question mark to an exclaimation mark.
     
 
     
